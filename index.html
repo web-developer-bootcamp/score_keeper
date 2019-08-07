@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./scorekeeper.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Score Keeper</title>
 </head>
+
 <body>
-    <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1> 
+    <h1 class="display-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
     <p>Playing to: <span id="num">0</span></p>
 
-    <input type="number">
-    <button id="p1">Player One</button>
-    <button id="p2">Player Two</button>
-    <button id="reset">Reset</button>
+    <div class="row">
+        <div class="col-sm">
+            <input type="number" class="rounded-lg">
+        </div>
 
+        <div class="col-sm">
+                <button id="p1" class="btn btn-info">Player One</button>
+            </div>
+            <div class="col-sm">
+                <button id="p2" class="btn btn-info">Player Two</button>
+            </div>
+            <div class="col-sm">
+                <button id="reset" class="btn btn-danger">Reset</button>
+            </div>
+    </div>
     <script src="./scorekeepr.js"></script>
 </body>
+
 </html>
